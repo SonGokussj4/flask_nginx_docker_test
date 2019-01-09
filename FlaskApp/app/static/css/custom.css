@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+
+h3 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.nav li a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+ul:not(.nav) li{
+    padding-top: 3px;
+}
+
+code {
+    border: 1px solid #DDDDD6;
+    font-family: monospace;
+    background-color: #F7F7F7;
+    border-radius: 3px;
+    color: black;
+    padding: 1px 8px;
+}
+
+div#issue-panel {margin-top: 50px;}
+div#issue-panel table th#issue {width: 60px;}
+div#issue-panel table th#details {width: 40px;}
+div#issue-panel table th#date_issued {width: 55px;}
+div#issue-panel table th#date_resolved {width: 55px;}
+div#issue-panel table th#version {width: 60px;}
+div#issue-panel table th#author {width: 60px;}
+div#issue-panel table th#modify {width: 50px;}
+div#issue-panel table td {
+  font-size: 0.9em;
+  padding: 6px 6px;
+  text-align: center;
+}
+table#tbl-unresolved-issues > tbody > tr > td:nth-child(2),
+table#tbl-resolved-issues > tbody > tr > td:nth-child(2) {
+  text-align: left;
+}
+input.dataTables_info {font-size: 0.9em; color: lightgray !important;}
+
+/* PAGE - Upload release changes */
+table#tbl-resolved-issues-in-db > thead > tr > th:nth-child(5) {width: 40px;}
+
+
+/* Custom modal width*/
+@media screen and (min-width: 768px) {
+    .custom-modal-width {
+        width: 60%; /* either % (e.g. 60%) or px (400px) */
+    }
+}
+
+.btn-static {
+  background-color: white;
+  border: 1px solid lightgrey;
+  cursor: default;
+}
+.btn-static:active {
+  -moz-box-shadow:    inset 0 0 0px white;
+  -webkit-box-shadow: inset 0 0 0px white;
+  box-shadow:         inset 0 0 0px white;
+}
+
+.alert-inline {
+  padding: 5px 1px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/*Search bar for DataTables sort*/
+.dataTables_filter input {
+  border: 1px solid lightgray;
+}
+
+.dataTables_paginate {
+  font-size: 0.8em;
+}
+
+.bg-danger-more {
+  background-color: #c9302c;
+  color: #fff;
+}
